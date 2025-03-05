@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        @font-face {
+            font-family: 'Ownglyph_corncorn-Rg';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* 전체 페이지 가운데 정렬 */
+        body {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: green;
+            font-family: 'Ownglyph_corncorn-Rg';
+        }
+
+        p {
+            color: purple;
+            font-family: fantasy;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 100px;
+        }
+
+        /* GitHub 방문 배너 스타일 */
+        .github-banner {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #24292e;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .github-banner a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .github-banner:hover {
+            background-color: #0366d6;
+        }
+    </style>
 </head>
 <body>
-    <h1>제 이름은 {{name1}} 입니다.</h1>
-    <p>좋아하는 음식은</p><a href =https://postfiles.pstatic.net/MjAyNDA4MDFfOTkg/MDAxNzIyNDkxNjI0NzY3.B_nS0eko6CvE72zc7Wa_EvpmixZs9WpoiMDUHTwix4Mg.2TATtw4999tDET7Q-A3HyUmT7FoJcC0s6qSrbHk70lQg.PNG/image.png?type=w773> 연어초밥</a>입니다.</body>
+    <!-- 프로필 이미지 -->
+    <img src="https://postfiles.pstatic.net/MjAyNTAzMDVfNTMg/MDAxNzQxMTUzNTMxMDkw.VW1iVld4wpM_4nxpp1jbYAw_7_DvaVj7chMenA59OuEg.PtAg-ysYXYKix9ZUjzY3ned6V1rOWsE909wjHAC1xJkg.JPEG/picture.jpg?type=w773" alt="My Picture">
+
+    <!-- 소개 -->
+    <h1>안녕하세요! 저는 {{name1}} 입니다.</h1>
+    <p>저의 취미와 관심사는 {{hobby}} {{interest}}입니다.</p>
+
+    <!-- GitHub 방문 배너 -->
+    <div class="github-banner">
+        <a href="https://github.com/bloodkys?tab=repositories" target="_blank">👉 내 GitHub 방문하기 👈</a>
+    </div>
 </body>
 </html>

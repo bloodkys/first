@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+        background-color: beige;}
+h1 {
+        color: green;
+        font-family: 'Ownglyph_corncorn-Rg';
+    }
+p {
+        color: purple;
+        font-family: fantasy;
+        margin: 50px 0 0 50px;
+    }
+img {
+        width: 300px;
+        border-radius: 100px;
+        margin: 100px 100px 100px 100px;
+    }
